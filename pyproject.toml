@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lurk-bot"
+version = "0.1.0"
+description = "Discord chatbot with a sassy chaotic persona"
+authors = [{ name = "Lurk" }]
+requires-python = ">=3.10"
+dependencies = [
+    "discord.py>=2.3.2,<3",
+    "openai>=0.27,<1",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
